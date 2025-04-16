@@ -37,3 +37,10 @@ build/
 storage/
 *.pth
 *.ckpt
+*.pt
+
+# Large model files
+models/CurveFault-B.pt
+models/CurveVel-A.pt
+models/CurveVel-B.pt
+util/model/ffhq_10m.pt
