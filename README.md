@@ -57,7 +57,7 @@ pip install -r requirements.txt
    - models/CurveVel-B.pt
    - util/model/ffhq_10m.pt
 
-   Download link: contact with geguojia@sjtu.edu.cn
+   Download link: contact geguojia@sjtu.edu.cn
 
 ## Usage
 
