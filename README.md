@@ -48,6 +48,17 @@ source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
+4. Download model files:
+   Due to file size limitations, model files are not included in the repository.
+   Please download the following files and place them in their respective directories:
+
+   - models/CurveFault-B.pt
+   - models/CurveVel-A.pt
+   - models/CurveVel-B.pt
+   - util/model/ffhq_10m.pt
+
+   Download link: ？？？
+
 ## Usage
 
 1. Configure experiment parameters:
