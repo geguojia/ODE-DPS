@@ -1,0 +1,31 @@
+conditioning:
+  method: ps
+  params:
+    decline: 1 # decline rate of coef of gradient
+    scale: 0.002
+    regular_scale: 0.05
+
+data:
+  name: func
+  normalize: 0 # 0 means no narmalization and else means normalization
+  root: ./data/function/
+
+measurement:
+  function: 1
+  diffusion_whether: 1 # 0 means no diffusion only gradient decent and else means both them
+  operator:
+    name: forward_process
+
+  opt:
+    initialize: 0.00000 # 0 is randn and else n is n*torch.ones
+
+  noise:
+    name: gaussian
+    sigma: 0.00005
+  
+  lam: 1
+
+stop:
+  tau: 1.0001
+  barrier: 0.0001
+

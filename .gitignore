@@ -1,0 +1,39 @@
+# Ignore test data directory
+/test_data/
+test_data
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local development settings
+.env
+.env.local
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Model checkpoints and data
+storage/
+*.pth
+*.ckpt
