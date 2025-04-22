@@ -96,19 +96,9 @@ def main():
         ref_img = ref_img.to(device)
 
         # Exception) In case of inpainging,
-        if measure_config['operator'] ['name'] == 'inpainting':
-            mask = mask_gen(ref_img)
-            mask = mask[:, 0, :, :].unsqueeze(dim=0)
-            measurement_cond_fn = partial(cond_method.conditioning, mask=mask)
-            sample_fn = partial(sample_fn, measurement_cond_fn=measurement_cond_fn)
-
-            # Forward measurement model (Ax + n)
-            y = operator.forward(ref_img, mask=mask)
-            y_n = noiser(y)
-        else: 
-            # Forward measurement model (Ax + n)
-            y = operator.forward(ref_img)  
-            y_n = noiser(y)
+       
+        y = operator.forward(ref_img)  
+        y_n = noiser(y)
 
         initialize = measure_config['opt']['initialize']
         if initialize == 0:
